@@ -1,0 +1,17 @@
+<%- include('includes/header.ejs'); %>
+
+<section class="content">  
+  <% for(i=0; data.calendar.length > i; i++) { %>    
+    <div class="wrapper">
+    <h3 class="title"><%= data.calendar[i].month %></h3>    
+    <% for(j=0; data.calendar[i].events.length > j; j++) { %>
+      <div class="events">
+        <div class="date"><%- data.calendar[i].events[j].date %></div>
+        <div class="event"><%- data.calendar[i].events[j].event %></div>
+      </div>
+    <% } %>
+    </div>    
+  <% } %>
+</section>
+
+<%- include('includes/footer.ejs'); %>

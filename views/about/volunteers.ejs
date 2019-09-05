@@ -1,0 +1,11 @@
+<section id="volunteers">
+  <h2 class="title"><%= data.title %></h2>
+  <div class="wrapper">
+    <% for (i=0; i < data.volunteers.length; i++) { %>
+      <div class="member">
+        <div class="name"><%= data.volunteers[i].name %></div>
+        <div class="role"><%= data.volunteers[i].role %></div>
+      </div>
+    <% } %>
+  </div>
+</section>

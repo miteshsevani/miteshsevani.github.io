@@ -1,0 +1,23 @@
+<%- include('includes/header.ejs'); %>
+
+<section class="content">
+  <nav class="subnav">
+    <ul>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#committee">Committee</a></li>
+      <li><a href="#volunteers">Volunteers</a></li>
+    </ul>
+  </nav>  
+  <div class="main">
+  <h2 class="title">About us</h2>
+    <%- data.intro %>    
+    <%- include('about/objectives.ejs', {data:data.objectives}); %>
+    <%- include('about/history.ejs', {data:data.history}); %>
+    <%- include('about/committee.ejs', {data:data.committee}); %>
+    <%- include('about/volunteers.ejs', {data:data.volunteers}); %>
+    <button onclick="topFunction()" id="scroll-top" title="Go to top">Top</button>
+  </div>
+</section>
+
+<%- include('includes/footer.ejs'); %>

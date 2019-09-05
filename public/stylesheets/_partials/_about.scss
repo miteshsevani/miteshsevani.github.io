@@ -1,0 +1,99 @@
+.about {    
+  .subnav {
+    background: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 62px;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          color: $color-text-secondary;
+          font-weight: 500;
+          &:hover {
+            border-bottom: 2px solid $color-secondary;              
+          }
+          &.active {                          
+            border-bottom: 2px solid $color-secondary;
+            padding: $margin-sm $margin-default;
+          }          
+        }
+      }
+    }
+  }
+  section {
+    padding-bottom: $margin-lg;
+    &:before {
+      content: "";        
+      display: block;
+      height: 150px;
+      margin: -150px 0 0;
+    }
+  }
+  #committee,
+  #volunteers {  
+    margin-top: $margin-lg;
+    .member {
+      width: calc(50% - #{$margin-default*2});
+      margin: $margin-md 0;
+      .name {
+        font-weight: normal;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }  
+  #scroll-top {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: $color-secondary;
+    color: white;    
+    padding: 15px;    
+  }
+}
+
+@include breakpoint(tablet) {
+  .about {    
+    .subnav {     
+      display: flex;
+      justify-content: center;      
+      padding: $margin-lg;
+      margin-top: 0;
+      text-align: center;
+      top: 72px;
+      ul {
+        list-style-type: none;        
+        margin: 0;
+        justify-content: flex-end;        
+        li {
+          padding: 0 $margin-xl;          
+        }
+      }      
+    }
+    #committee,
+    #volunteers {
+      .wrapper {        
+        .member {
+          width: calc(25% - #{$margin-xl});
+          margin: $margin-lg 0;                    
+        }
+      }
+    }
+    #scroll-top {      
+      bottom: 30px;
+      right: 30px;
+    }
+  }
+}

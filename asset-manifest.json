@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4cbf0c0.chunk.css",
+    "main.js": "/static/js/main.f71a2067.chunk.js",
+    "main.js.map": "/static/js/main.f71a2067.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.acea59f4.js",
+    "runtime~main.js.map": "/static/js/runtime~main.acea59f4.js.map",
+    "static/js/2.685dee57.chunk.js": "/static/js/2.685dee57.chunk.js",
+    "static/js/2.685dee57.chunk.js.map": "/static/js/2.685dee57.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d111908f5ec39b7a3986f4a11638eb46.js": "/precache-manifest.d111908f5ec39b7a3986f4a11638eb46.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a4cbf0c0.chunk.css.map": "/static/css/main.a4cbf0c0.chunk.css.map",
+    "static/media/App.css": "/static/media/Roboto-regular.bafb105b.woff",
+    "static/media/nav.css": "/static/media/facebook.b5073b58.svg",
+    "static/media/banner.css": "/static/media/reading.ed2d93dd.jpg"
+  }
+}
